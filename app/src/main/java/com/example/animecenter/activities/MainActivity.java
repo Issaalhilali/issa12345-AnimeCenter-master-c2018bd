@@ -60,33 +60,30 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         setContentView(R.layout.activity_main);
         MobileAds.initialize(this,getString(R.string.ads_banner));
 
-        mAdView = findViewById(R.id.adView);
-        AdRequest adRequest = new AdRequest.Builder().build();
-        mAdView.loadAd(adRequest);
-
-        if (savedInstanceState != null){
-            lstAnime = savedInstanceState.getParcelableArrayList("STATE_SCORE");
-        }else {
-            jsonrequest();
-        }
-
+         mAdView = findViewById(R.id.adView);
         NavigationView navigationView = findViewById(R.id.navigationId);
         navigationView.setNavigationItemSelectedListener(this);
         mDrawerlayout = (DrawerLayout) findViewById(R.id.drawe);
         mToggle = new ActionBarDrawerToggle(this, mDrawerlayout, R.string.open, R.string.close);
         mDrawerlayout.addDrawerListener(mToggle);
         mToggle.syncState();
-
-
-
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        lstAnime = new ArrayList<>() ;
+
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
+
+
         recyclerView = findViewById(R.id.recyclerviewid);
-        jsonrequest();
+
+        if (savedInstanceState != null) {
+            lstAnime = savedInstanceState.getParcelableArrayList("STATE_SCORE");
+            setuprecyclerview(lstAnime);
+        } else {
+            lstAnime = new ArrayList<>();
+            jsonrequest();
+        }
 
     }
-
-
 
     @Override
     protected void onSaveInstanceState(Bundle outState) {
