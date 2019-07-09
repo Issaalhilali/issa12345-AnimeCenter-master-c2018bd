@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "5005706092",
+    "firebase_url": "https://animecenter-c2840.firebaseio.com",
+    "project_id": "animecenter-c2840",
+    "storage_bucket": "animecenter-c2840.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:5005706092:android:adf8b0e8b7f0fe6b",
+        "android_client_info": {
+          "package_name": "com.example.animecenter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "5005706092-g3rj2qid6cuvlcr6ufbs3on1kea0d1fc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.animecenter",
+            "certificate_hash": "46f5d5b989103025f850b77dad6d4971af3dfa2e"
+          }
+        },
+        {
+          "client_id": "5005706092-eeksq5ibml4h7p2rumrv767d7cg4fm2p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARE01-CzzrLozqryHGUm2FdrX5bRqJIsQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "5005706092-eeksq5ibml4h7p2rumrv767d7cg4fm2p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

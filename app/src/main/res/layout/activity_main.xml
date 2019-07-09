@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/imagesdfg"
+    tools:context=".activities.MainActivity">
+  <android.support.v4.widget.DrawerLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:id="@+id/drawe">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerviewid"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+    </android.support.v7.widget.RecyclerView>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigationId"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        app:itemTextColor="@color/btn_login"
+        app:itemIconTint="@color/btn_login"
+        app:menu="@menu/drawermenu"
+        android:layout_gravity="start" />
+
+  </android.support.v4.widget.DrawerLayout>
+
+  <com.google.android.gms.ads.AdView
+      xmlns:ads="http://schemas.android.com/apk/res-auto"
+      android:id="@+id/adView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:layout_alignParentBottom="true"
+      ads:adSize="BANNER"
+      ads:adUnitId="@string/ads_banner">
+  </com.google.android.gms.ads.AdView>
+
+  <ProgressBar
+      android:id="@+id/pbLoad"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerInParent="true"
+      android:visibility="gone" />
+</RelativeLayout>

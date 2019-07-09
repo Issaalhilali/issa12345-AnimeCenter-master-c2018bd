@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+<item
+    android:id="@+id/db"
+    android:title="@string/dashboared"
+    android:icon="@drawable/ic_dashboard_black_24dp" />
+
+<item
+android:id="@+id/imagegroup"
+android:title="@string/GroupImage"
+android:icon="@drawable/ic_image_black_24dp" />
+<item
+android:id="@+id/about"
+android:title="@string/about"
+android:icon="@drawable/ic_info_outline_black_24dp" />
+<item
+android:id="@+id/settings"
+android:title="@string/settings"
+android:icon="@drawable/ic_settings_black_24dp" />
+<item
+android:id="@+id/logout"
+android:title="@string/logout"
+android:icon="@drawable/ic_exit_to_app_black_24dp" />
+    </menu>
