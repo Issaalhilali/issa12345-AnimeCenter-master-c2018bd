@@ -17,6 +17,7 @@
     <string name="Gender">الجنس</string>
     <string name="Male">ذكر</string>
     <string name="female">انثى</string>
+    <string name="Studio">استوديو</string>
 
     <string name="welcome">مرحبا بك في مركز الانمي</string>
 
@@ -52,4 +53,9 @@
     <string name="settings">الاعدادات </string>
     <string name="about">حول</string>
     <string name="GroupImage">مجموعة من الانميات</string>
+    <string name="share">استخدم للمشاركة</string>
+    <string name="get_App">احصل على تطبيق مركز الانمي</string>
+    <string name="get_Anime">تطبيق مركز الانمي يمكنك الآن الحصول على الرابط https://play.google
+        .com/store</string>
+    <string name="get_click_share">النقر على حصة القائمة</string>
 </resources>

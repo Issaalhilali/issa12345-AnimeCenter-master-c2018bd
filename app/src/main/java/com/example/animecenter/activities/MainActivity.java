@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         setContentView(R.layout.activity_main);
         MobileAds.initialize(this,getString(R.string.ads_banner));
 
-         mAdView = findViewById(R.id.adView);
+        mAdView = findViewById(R.id.adView);
         NavigationView navigationView = findViewById(R.id.navigationId);
         navigationView.setNavigationItemSelectedListener(this);
         mDrawerlayout = (DrawerLayout) findViewById(R.id.drawe);
@@ -170,13 +170,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 Intent i = new Intent(Intent.ACTION_SEND);
 
                 i.setType("text/plain");
-                String sharebody = " Anime Center app you can get now on link https://play.google.com/store";
-                String shareSub = "get App Anime Center";
+                String sharebody = getString(R.string.get_Anime);
+                String shareSub = getString(R.string.get_App);
                 i.putExtra(Intent.EXTRA_SUBJECT, shareSub);
                 i.putExtra(Intent.EXTRA_TEXT, sharebody);
-                startActivity(Intent.createChooser(i, "Share using"));
+                startActivity(Intent.createChooser(i,getText(R.string.share)));
         }
-        Toast.makeText(getApplicationContext(), "you click on menu share", Toast.LENGTH_SHORT).show();
+        Toast.makeText(getApplicationContext(), getString(R.string.get_click_share), Toast.LENGTH_SHORT).show();
         return super.onOptionsItemSelected(item);
 
     }

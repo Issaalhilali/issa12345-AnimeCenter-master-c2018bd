@@ -14,7 +14,8 @@
         android:id="@+id/thumbnail"
         android:layout_width="100dp"
         android:layout_height="match_parent"
-        android:background="@drawable/loading"/>
+        android:background="@drawable/loading"
+        android:contentDescription="@null" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -48,7 +49,8 @@
             android:textColor="#000000"
             android:textSize="15sp"
             android:drawableLeft="@drawable/ic_star_black_24dp"
-            android:paddingRight="8dp"/>
+            android:paddingRight="8dp"
+            android:drawableStart="@drawable/ic_star_black_24dp" />
 
         <LinearLayout
             android:layout_width="269dp"
@@ -60,7 +62,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="Studio" />
+                android:text="@string/Studio" />
 
         </LinearLayout>
 

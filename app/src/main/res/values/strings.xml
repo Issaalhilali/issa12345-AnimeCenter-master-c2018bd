@@ -46,6 +46,11 @@
     <string name="logout">Logout</string>
     <string name="settings">Settings</string>
     <string name="about">About</string>
+    <string name="Studio">Studio</string>
     <string name="dashboared">Dashboared</string>
     <string name="GroupImage">Group Anime</string>
+    <string name="share">Share using</string>
+    <string name="get_App">get App Anime Center</string>
+    <string name="get_Anime">Anime Center app you can get now on link https://play.google.com/store</string>
+    <string name="get_click_share">you click on menu share</string>
 </resources>

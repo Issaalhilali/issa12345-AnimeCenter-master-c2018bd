@@ -5,7 +5,7 @@ android {
 
     signingConfigs {
         release {
-            storeFile file('C:\\Users\\mille\\Desktop\\issa12345-AnimeCenter-master-c2018bd\\app')
+            storeFile file('C:\\Users\\mille\\Desktop\\issa12345-AnimeCenter-master-c2018bd\\app\\release\\anime.jks')
             storePassword 'issa_123'
             keyAlias = 'udacity'
             keyPassword 'issa_123'
@@ -19,11 +19,13 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        signingConfig signingConfigs.release
     }
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
         }
     }
 }
